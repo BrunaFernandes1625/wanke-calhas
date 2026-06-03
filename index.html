@@ -241,7 +241,7 @@ color:#666;
 /* GRID */
 .contato-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:20px;
 max-width:900px;
 margin:auto;
@@ -249,27 +249,31 @@ margin:auto;
 
 /* CARDS */
 .contato-item{
-background:white;
-padding:25px;
-border-radius:15px;
-text-decoration:none;
-color:#333;
-box-shadow:0 5px 18px rgba(0,0,0,.08);
-transition:.3s;
-display:block;
+background: white;
+padding: 25px;
+border-radius: 15px;
+text-decoration: none;
+color: #333;
+box-shadow: 0 4px 12px rgba(0,0,0,.08);
+transition: .3s;
+display: block;
+
+/* melhora visual */
+border: 1px solid rgba(79,127,42,.15);
 }
 
 /* HOVER */
 .contato-item:hover{
-transform:translateY(-6px);
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+transform: translateY(-6px);
+box-shadow: 0 12px 25px rgba(0,0,0,.15);
+border-color: #4F7F2A;
 }
 
 /* ÍCONES */
 .contato-item i{
-font-size:32px;
-color:#4F7F2A;
-margin-bottom:10px;
+font-size: 34px;
+color: #4F7F2A;
+margin-bottom: 10px;
 }
 
 footer{
@@ -308,13 +312,14 @@ margin-top:50px;
     scroll-margin-top: 120px;
 }
 
-.contato-item i{
-font-size:35px;
+.contato-item h3{
 margin-bottom:10px;
 }
 
-.contato-item h3{
-margin-bottom:10px;
+.atendimento{
+grid-column:1 / -1;
+justify-self:center;
+max-width:250px;
 }
   
 @media(max-width:768px){
@@ -454,16 +459,20 @@ Fale com a Wanke Calhas pelo canal que preferir
 <div class="contato-item">
 <i class="fa-solid fa-envelope"></i>
 <h3>E-mail</h3>
-<p>wankecalhas1@gmail.com</p>
+<p>
+<a href="mailto:wankecalhas1@gmail.com">wankecalhas1@gmail.com</a>
+</p>
 </div>
 
 <div class="contato-item">
 <i class="fa-brands fa-instagram"></i>
 <h3>Instagram</h3>
-<p>@wankecalhas</p>
+<p>
+<a href="https://instagram.com/wankecalhas" target="_blank">@wankecalhas</a>
+</p>
 </div>
 
-<div class="contato-item">
+<div class="contato-item atendimento">
 <i class="fa-solid fa-location-dot"></i>
 <h3>Atendimento</h3>
 <p>Curitiba e região</p>
