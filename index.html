@@ -104,7 +104,12 @@ height:250px;
 object-fit:cover;
 border-radius:12px;
 box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+transition:0.3s;
 }
+
+.portfolio img:hover{
+  transform:scale(1.03);
 
 .cards-diferenciais{
 display:grid;
@@ -145,16 +150,23 @@ margin-top:50px;
 }
 
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,.25);
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+.whatsapp img{
+    width:38px;
+    height:38px;
 }
 
 @media(max-width:768px){
@@ -246,7 +258,7 @@ nav{display:none}
 
 <section id="contato" class="contato">
 <h2 style="color:white">Contato</h2>
-<p><strong>WhatsApp:</strong> (41) 98466-7759</p><br>
+<p><strong>Telefone:</strong> (41) 98466-7759</p><br>
 <p><strong>E-mail:</strong> <a href="mailto:wankecalhas1@gmail.com">wankecalhas1@gmail.com</a></p><br>
 <p><strong>Instagram:</strong> <a href="https://www.instagram.com/wankecalhas/" target="_blank">@wankecalhas</a></p><br>
 <p><strong>Atendimento:</strong> Curitiba e Região Metropolitana</p><br>
@@ -257,7 +269,9 @@ nav{display:none}
 © 2026 Wanke Calhas - Todos os direitos reservados
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5541984667759" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/5541984667759" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp">
+</a>
 
 </body>
 </html>
