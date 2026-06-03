@@ -112,6 +112,25 @@ transition:.3s;
 .card:hover{
     transform:translateY(-5px);
 
+.cards-atendemos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card-atendimento{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card-atendimento:hover{
+    transform:translateY(-5px);
+}
+    
 .icone{
     font-size:45px;
     margin-bottom:15px;
@@ -241,28 +260,28 @@ Solicitar Orçamento</a>
 
 <section>
 <h2>Atendemos</h2>
-<div class="cards">
-<div class="card">
+<div class="cards-atendemos">
+<div class="card-atendemos">
     <div class="icone">🏠</div>
     <h3>Residências</h3>
 </div>
-<div class="card">
+<div class="card-atendemos">
     <div class="icone">🏢</div>
     <h3>Condomínios</h3>
 </div>
-<div class="card">
+<div class="card-atendemos">
     <div class="icone">🏭</div>
     <h3>Empresas</h3>
 </div>
-<div class="card">
+<div class="card-atendemos">
     <div class="icone">🏗️</div>
     <h3>Construtoras</h3>
 </div>
-<div class="card">
+<div class="card-atendemos">
     <div class="icone">🏬</div>
     <h3>Galpões Industriais</h3>
 </div>
-<div class="card">
+<div class="card-atendemos">
     <div class="icone">📐</div>
     <h3>Engenheiros</h3>
 </div>
