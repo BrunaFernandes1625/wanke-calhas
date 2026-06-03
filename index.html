@@ -11,7 +11,7 @@ html{scroll-behavior:smooth}
 body{background:#f8f9fa;color:#333;line-height:1.6}
 
 header{
-background:#6ca83b;
+background:#4F7F2A;
 padding:15px 5%;
 display:flex;
 justify-content:space-between;
@@ -52,6 +52,19 @@ max-width:900px;
 margin:auto;
 }
 
+.hero h3{
+    font-size:26px;
+    margin-bottom:20px;
+    color:#8fd14f;
+    font-weight:600;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:850px;
+    margin:auto;
+}
+  
 .btn{
 display:inline-block;
 margin-top:30px;
@@ -69,7 +82,7 @@ section{padding:80px 10%}
 h2{
 text-align:center;
 margin-bottom:40px;
-color:#6ca83b;
+color:#4F7F2A;
 font-size:36px;
 }
 
@@ -88,7 +101,7 @@ box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 .card h3{
-color:#6ca83b;
+color:#4F7F2A;
 margin-bottom:10px;
 }
 
@@ -130,7 +143,7 @@ box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
 .contato{
-background:#6ca83b;
+background:#4F7F2A;
 color:white;
 border-radius:20px;
 padding:50px;
@@ -151,18 +164,26 @@ margin-top:50px;
 }
 
 .whatsapp{
-position:fixed;
-bottom:10px;
-right:10px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,.25);
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    z-index:999;
 }
 
+.whatsapp img{
+    width:28px;
+    height:28px;
+    display:block;
+}
+  
 @media(max-width:768px){
 .hero h1{font-size:42px}
 .logo img{height:80px}
@@ -188,9 +209,11 @@ nav{display:none}
 
 <section class="hero">
 <h1>WANKE CALHAS</h1>
-<p>Soluções em Calhas, Rufos, Pingadeiras e Funilaria Sob Medida.</p>
-<p>Mais de 20 anos de experiência atendendo Curitiba e Região Metropolitana.</p>
-<a class="btn" href="https://wa.me/5541984667759" target="_blank">Solicitar Orçamento</a>
+<h3>Calhas • Rufos • Pingadeiras • Funilaria Sob Medida</h3>
+<p>Mais de 20 anos de experiência atendendo residências, empresas,
+condomínios e construtoras em Curitiba e Região Metropolitana.</p>
+<a class="btn" href="https://wa.me/5541984667759" target="_blank">
+Solicitar Orçamento</a>
 </section>
 
 <section>
