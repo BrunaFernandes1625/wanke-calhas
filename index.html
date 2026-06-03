@@ -83,12 +83,12 @@ border-radius:2px;
 }
 
 .marca{
-font-size:18px;
-letter-spacing:4px;
+font-size:14px;
+letter-spacing:6px;
 text-transform:uppercase;
-color:#8fd14f;
-font-weight:700;
-margin-top:10px;
+font-weight:500;
+color:rgba(255,255,255,.65);
+margin-top:12px;
 }
 
 .hero h3{
@@ -225,19 +225,51 @@ font-weight:bold;
 box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
+/* CONTAINER PRINCIPAL */
 .contato{
-background:#4F7F2A;
-color:white;
-border-radius:20px;
-padding:30px;
+padding:70px 10%;
 text-align:center;
-max-width:1000px;
+}
+
+/* SUBTÍTULO */
+.contato-sub{
+margin-top:10px;
+margin-bottom:30px;
+color:#666;
+}
+
+/* GRID */
+.contato-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
 margin:auto;
 }
 
-.contato a{
-color:white;
-font-weight:bold;
+/* CARDS */
+.contato-item{
+background:white;
+padding:25px;
+border-radius:15px;
+text-decoration:none;
+color:#333;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+transition:.3s;
+display:block;
+}
+
+/* HOVER */
+.contato-item:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ÍCONES */
+.contato-item i{
+font-size:32px;
+color:#4F7F2A;
+margin-bottom:10px;
 }
 
 footer{
@@ -274,19 +306,6 @@ margin-top:50px;
 #portfolio,
 #contato{
     scroll-margin-top: 120px;
-}
-
-.contato-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.contato-item{
-background:rgba(255,255,255,.12);
-padding:20px;
-border-radius:12px;
 }
 
 .contato-item i{
@@ -418,15 +437,19 @@ Solicitar Orçamento</a>
 
 <section id="contato" class="contato">
 
-<h2 style="color:white">Fale Conosco</h2>
+<h2>Central de Atendimento</h2>
+
+<p class="contato-sub">
+Fale com a Wanke Calhas pelo canal que preferir
+</p>
 
 <div class="contato-grid">
 
-<div class="contato-item">
+<a class="contato-item" href="https://wa.me/5541984667759" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 <h3>WhatsApp</h3>
-<p>(41) 98466-7759</p>
-</div>
+<p>Orçamento rápido</p>
+</a>
 
 <div class="contato-item">
 <i class="fa-solid fa-envelope"></i>
@@ -443,16 +466,10 @@ Solicitar Orçamento</a>
 <div class="contato-item">
 <i class="fa-solid fa-location-dot"></i>
 <h3>Atendimento</h3>
-<p>Curitiba e Região Metropolitana</p>
+<p>Curitiba e região</p>
 </div>
 
 </div>
-
-<br>
-
-<a class="btn" href="https://wa.me/5541984667759" target="_blank">
-Solicitar Orçamento
-</a>
 
 </section>
 
