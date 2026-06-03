@@ -57,16 +57,29 @@ overflow:hidden;
 }
 
 .hero h1{
-font-size:64px;
-letter-spacing:6px;
-font-weight:800;
+font-size:66px;
+letter-spacing:8px;
+font-weight:900;
 text-transform:uppercase;
-margin-bottom:10px;
-color:#fff;
+color:#ffffff;
 
-/* efeito de marca */
-text-shadow: 3px 3px 0px rgba(0,0,0,.25),
-             0px 8px 20px rgba(0,0,0,.35);
+/* efeito de marca forte */
+text-shadow:
+1px 1px 0 #2f4f1f,
+2px 2px 0 #2f4f1f,
+3px 3px 0 #2f4f1f,
+0 10px 25px rgba(0,0,0,.45);
+
+/* sensação de “logo sólido” */
+font-family: Arial Black, Arial, Helvetica, sans-serif;
+}
+
+.logo-bar{
+width:120px;
+height:4px;
+background:#8fd14f;
+margin:10px auto;
+border-radius:2px;
 }
 
 .marca{
@@ -312,6 +325,7 @@ nav{display:none}
 
 <section class="hero">
 <h1>WANKE CALHAS</h1>
+<div class="logo-bar"></div>
 <p class="marca">Calhas • Rufos • Pingadeiras</p>
 <p>Mais de 20 anos de experiência atendendo residências, empresas,
 condomínios e construtoras em Curitiba e Região Metropolitana.</p>
