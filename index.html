@@ -101,12 +101,21 @@ gap:20px;
 
 .card{
 background:white;
-padding:25px;
+padding:30px 20px;
 border-radius:15px;
 text-align:center;
 box-shadow:0 4px 15px rgba(0,0,0,.08);
+transition:.3s;
 }
 
+.card:hover{
+    transform:translateY(-5px);
+
+.icone{
+    font-size:45px;
+    margin-bottom:15px;
+}
+    
 .card h3{
 color:#4F7F2A;
 margin-bottom:10px;
@@ -224,13 +233,39 @@ Solicitar Orçamento</a>
 
 <section>
 <h2>Atendemos</h2>
+
 <div class="cards">
-<div class="card">Residências</div>
-<div class="card">Condomínios</div>
-<div class="card">Empresas</div>
-<div class="card">Construtoras</div>
-<div class="card">Galpões Industriais</div>
-<div class="card">Engenheiros</div>
+
+<div class="card">
+    <div class="icone">🏠</div>
+    <h3>Residências</h3>
+</div>
+
+<div class="card">
+    <div class="icone">🏢</div>
+    <h3>Condomínios</h3>
+</div>
+
+<div class="card">
+    <div class="icone">🏭</div>
+    <h3>Empresas</h3>
+</div>
+
+<div class="card">
+    <div class="icone">🏗️</div>
+    <h3>Construtoras</h3>
+</div>
+
+<div class="card">
+    <div class="icone">🏬</div>
+    <h3>Galpões Industriais</h3>
+</div>
+
+<div class="card">
+    <div class="icone">📐</div>
+    <h3>Engenheiros</h3>
+</div>
+
 </div>
 </section>
 
