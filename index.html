@@ -690,43 +690,84 @@ RESPONSIVO
 
 @media(max-width:900px){
 
+header{
+flex-direction:column;
+padding:10px;
+}
+
+.logo img{
+height:60px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:8px;
+margin-top:10px;
+}
+
+nav a{
+font-size:13px;
+padding:6px 10px;
+margin:0;
+}
+
+.hero{
+padding:45px 15px;
+margin:10px;
+}
+
+.hero h1{
+font-size:32px;
+letter-spacing:2px;
+line-height:1.1;
+}
+
+.hero-sub{
+font-size:18px;
+}
+
+.hero p{
+font-size:15px;
+}
+
 .cards-servicos,
 .cards-produtos,
 .cards-diferenciais,
 .cards-avaliacoes,
-.contato-grid{
-
+.contato-grid,
+.cards-atendemos{
 grid-template-columns:1fr;
 }
 
-.cards-atendemos{
+.card-atendimento{
+padding:20px;
+}
 
-grid-template-columns:1fr;
+.icone{
+font-size:35px;
+margin-bottom:10px;
 }
 
 .portfolio{
-
 grid-template-columns:repeat(2,1fr);
+gap:10px;
 }
 
-.hero h1{
-
-font-size:42px;
+.portfolio img{
+height:130px;
 }
 
-.hero-sub{
-
-font-size:18px;
+.whatsapp{
+width:55px;
+height:55px;
+right:15px;
+bottom:15px;
 }
 
-nav{
-
-display:none;
-}
-
-.logo img{
-
-height:70px;
+.whatsapp i{
+font-size:28px;
 }
 }
 
