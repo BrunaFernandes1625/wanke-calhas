@@ -77,7 +77,7 @@ box-shadow:0 2px 15px rgba(0,0,0,.15);
 }
 
 .logo img{
-height:90px;
+height:75px;
 }
 
 nav{
@@ -692,45 +692,77 @@ RESPONSIVO
 
 header{
 flex-direction:column;
-padding:10px;
+padding:8px;
 }
 
 .logo img{
-height:60px;
+height:55px;
 }
 
+/* MENU */
+
 nav{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:8px;
-margin-top:10px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+width:100%;
+gap:6px;
+margin-top:8px;
 }
 
 nav a{
-font-size:13px;
-padding:6px 10px;
+font-size:12px;
+padding:8px 4px;
 margin:0;
+text-align:center;
 }
 
+/* BANNER */
+
 .hero{
-padding:45px 15px;
-margin:10px;
+padding:25px 15px;
+margin:8px;
+border-radius:15px;
 }
 
 .hero h1{
-font-size:32px;
-letter-spacing:2px;
+font-size:30px;
+letter-spacing:1px;
 line-height:1.1;
 }
 
 .hero-sub{
-font-size:18px;
+font-size:16px;
+margin-bottom:12px;
 }
 
 .hero p{
-font-size:15px;
+font-size:14px;
+line-height:1.5;
 }
+
+.btn{
+padding:12px 20px;
+font-size:14px;
+margin-top:20px;
+}
+
+/* SEÇÕES */
+
+section{
+padding:50px 6%;
+}
+
+h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.section-desc{
+font-size:14px;
+margin-bottom:25px;
+}
+
+/* CARDS */
 
 .cards-servicos,
 .cards-produtos,
@@ -741,34 +773,74 @@ font-size:15px;
 grid-template-columns:1fr;
 }
 
-.card-atendimento{
+.card-servico,
+.card-atendimento,
+.diferencial,
+.avaliacao,
+.contato-item{
 padding:20px;
 }
+
+/* ÍCONES */
 
 .icone{
 font-size:35px;
 margin-bottom:10px;
 }
 
+/* PRODUTOS */
+
+.produto-card img{
+height:180px;
+}
+
+/* PORTFÓLIO */
+
 .portfolio{
 grid-template-columns:repeat(2,1fr);
-gap:10px;
+gap:8px;
 }
 
 .portfolio img{
-height:130px;
+height:120px;
 }
 
+/* FORMULÁRIO */
+
+.formulario{
+padding:20px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+font-size:16px;
+}
+
+/* WHATSAPP */
+
 .whatsapp{
-width:55px;
-height:55px;
-right:15px;
-bottom:15px;
+width:50px;
+height:50px;
+right:10px;
+bottom:10px;
 }
 
 .whatsapp i{
-font-size:28px;
+font-size:24px;
 }
+
+/* DESATIVA HOVERS NO CELULAR */
+
+.card-servico:hover,
+.card-atendimento:hover,
+.diferencial:hover,
+.produto-card:hover,
+.contato-item:hover,
+.portfolio img:hover{
+transform:none;
+}
+
 }
 
 </style>
