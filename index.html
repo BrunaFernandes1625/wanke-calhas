@@ -126,14 +126,11 @@ border-radius:25px;
 }
 
 .hero h1{
-
-font-size:72px;
-
+font-size:78px;
 font-weight:900;
-
-letter-spacing:5px;
-
+letter-spacing:8px;
 text-transform:uppercase;
+text-shadow:0 4px 20px rgba(0,0,0,.35);
 }
 
 .logo-bar{
@@ -652,37 +649,39 @@ WHATSAPP
 ========================= */
 
 .whatsapp{
-
 position:fixed;
-
 right:20px;
-
 bottom:20px;
-
 width:65px;
-
 height:65px;
-
 background:#25D366;
-
 border-radius:50%;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 box-shadow:0 5px 20px rgba(0,0,0,.25);
-
 z-index:999;
+text-decoration:none;
+outline:none;
+border:none;
+}
+
+.whatsapp:visited{
+color:white;
+}
+
+.whatsapp:focus{
+outline:none;
 }
 
 .whatsapp i{
-
 font-size:34px;
-
 color:white;
+}
+
+.whatsapp:hover{
+transform:scale(1.08);
+transition:.3s;
 }
 
 /* =========================
