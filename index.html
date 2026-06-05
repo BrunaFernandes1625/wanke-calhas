@@ -684,6 +684,40 @@ transform:scale(1.08);
 transition:.3s;
 }
 
+.lightbox{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.lightbox img{
+max-width:95%;
+max-height:95%;
+border-radius:10px;
+}
+
+.fechar{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+.portfolio img,
+.produto-card img{
+cursor:pointer;
+}
+  
 /* =========================
 RESPONSIVO
 ========================= */
@@ -805,7 +839,7 @@ gap:8px;
 }
 
 .portfolio img{
-height:120px;
+height:110px;
 }
 
 /* FORMULÁRIO */
@@ -850,6 +884,36 @@ transform:none;
 
 </head>
 
+<div id="lightbox" class="lightbox">
+    <span class="fechar">&times;</span>
+    <img id="img-ampliada">
+</div>
+<script>
+
+const imagens = document.querySelectorAll('.portfolio img, .produto-card img');
+
+const lightbox = document.getElementById('lightbox');
+const imgAmpliada = document.getElementById('img-ampliada');
+
+imagens.forEach(img => {
+
+    img.addEventListener('click', () => {
+
+        lightbox.style.display = 'flex';
+        imgAmpliada.src = img.src;
+
+    });
+
+});
+
+lightbox.addEventListener('click', () => {
+
+    lightbox.style.display = 'none';
+
+});
+
+</script>
+  
 <body>
 
 <header>
