@@ -1,355 +1,743 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wanke Calhas | Curitiba e Região Metropolitana</title>
+
+<title>Wanke Calhas | Calhas, Rufos e Pingadeiras em Curitiba</title>
+
+<meta name="description"
+content="Mais de 20 anos de experiência em calhas, rufos, pingadeiras e funilaria sob medida em Curitiba e Região Metropolitana.">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-html{scroll-behavior:smooth}
-body{background:#f8f9fa;color:#333;line-height:1.6}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f8f5;
+color:#333;
+line-height:1.6;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+color:#4F7F2A;
+font-size:38px;
+margin-bottom:15px;
+}
+
+.section-desc{
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:45px;
+color:#666;
+}
+
+/* =========================
+HEADER
+========================= */
 
 header{
 background:#4F7F2A;
-padding:10px 5%;
-display:flex;
-justify-content:space-between;
-align-items:center;
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,.15);
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:10px 6%;
+
+box-shadow:0 2px 15px rgba(0,0,0,.15);
 }
 
-.logo img{height:100px}
+.logo img{
+height:90px;
+}
 
+nav{
+display:flex;
+gap:10px;
+}
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
-font-weight:600;
-font-size:16px;
-padding:8px 14px;
+padding:10px 16px;
 border-radius:8px;
+font-weight:600;
 transition:.3s;
 }
 
 nav a:hover{
 background:rgba(255,255,255,.15);
-border-radius:8px;
 }
 
+/* =========================
+HERO
+========================= */
+
 .hero{
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('obra1.jpg');
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+),
+url('obra1.jpg');
+
 background-size:cover;
 background-position:center;
+
 color:white;
+
 text-align:center;
-padding:90px 20px;
-margin-top:25px;
-border-radius:0 0 25px 25px;
-overflow:hidden;
+
+padding:120px 20px;
+
+margin:20px;
+
+border-radius:25px;
 }
 
 .hero h1{
-font-size:66px;
-letter-spacing:8px;
+
+font-size:72px;
+
 font-weight:900;
+
+letter-spacing:5px;
+
 text-transform:uppercase;
-color:#ffffff;
-
-/* efeito de marca forte */
-text-shadow:
-1px 1px 0 #2f4f1f,
-2px 2px 0 #2f4f1f,
-3px 3px 0 #2f4f1f,
-0 10px 25px rgba(0,0,0,.45);
-
-/* sensação de “logo sólido” */
-font-family: Arial Black, Arial, Helvetica, sans-serif;
 }
 
 .logo-bar{
-width:120px;
-height:4px;
+
+width:130px;
+height:5px;
+
 background:#8fd14f;
-margin:10px auto;
-border-radius:2px;
+
+margin:18px auto;
+
+border-radius:10px;
 }
 
-.marca{
-font-size:14px;
-letter-spacing:6px;
-text-transform:uppercase;
-font-weight:500;
-color:rgba(255,255,255,.65);
-margin-top:12px;
-}
+.hero-sub{
 
-.hero h3{
-    font-size:28px;
-    margin-bottom:25px;
-    color:#8fd14f;
-    font-weight:700;
+font-size:22px;
+
+font-weight:700;
+
+color:#8fd14f;
+
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:20px;
-    max-width:850px;
-    margin:auto;
+
+font-size:20px;
+
+max-width:850px;
+
+margin:auto;
 }
-  
+
 .btn{
+
 display:inline-block;
+
 margin-top:30px;
+
 padding:18px 35px;
+
 background:#25D366;
+
 color:white;
-text-decoration:none;
+
 font-weight:bold;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,.25);
-}
 
-section{padding:80px 10%}
+text-decoration:none;
 
-h2{
-text-align:center;
-margin-bottom:40px;
-color:#4F7F2A;
-font-size:36px;
-}
+border-radius:10px;
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:30px 20px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
 transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.btn:hover{
+
+transform:translateY(-4px);
 }
-    
+
+/* =========================
+ATENDEMOS
+========================= */
+
 .cards-atendemos{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    max-width:1000px;
-    margin:auto;
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+max-width:1100px;
+
+margin:auto;
 }
 
 .card-atendimento{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    transition:.3s;
+
+background:white;
+
+padding:35px 25px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
 }
 
 .card-atendimento:hover{
-    transform:translateY(-8px);
+
+transform:translateY(-8px);
 }
-    
+
 .icone{
-    font-size:45px;
-    margin-bottom:15px;
-    transition:.3s;
-    color:#4F7F2A;
+
+font-size:48px;
+
+color:#4F7F2A;
+
+margin-bottom:18px;
+
+transition:.3s;
 }
 
 .card-atendimento:hover .icone{
-    transform:scale(1.25);
+
+transform:scale(1.2);
 }
-    
-.card h3{
+
+.card-atendimento h3{
+
 color:#4F7F2A;
+
 margin-bottom:10px;
 }
 
-.portfolio{
+/* =========================
+SERVIÇOS
+========================= */
+
+.cards-servicos{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+}
+
+.card-servico{
+
+background:white;
+
+padding:35px 25px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.card-servico:hover{
+
+transform:translateY(-8px);
+}
+
+.card-servico i{
+
+font-size:48px;
+
+color:#4F7F2A;
+
+margin-bottom:20px;
+}
+
+.card-servico h3{
+
+color:#4F7F2A;
+
+margin-bottom:10px;
+}
+
+/* =========================
+PRODUTOS
+========================= */
+
+.cards-produtos{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+}
+
+.produto-card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.produto-card:hover{
+
+transform:translateY(-8px);
+}
+
+.produto-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+}
+
+.produto-card h3{
+
+text-align:center;
+
+color:#4F7F2A;
+
+margin:15px 0;
+}
+
+.produto-card p{
+
+padding:0 20px;
+
+text-align:center;
+
+color:#666;
+}
+
+.produto-card a{
+
+display:block;
+
+margin:20px;
+
+padding:12px;
+
+background:#4F7F2A;
+
+color:white;
+
+text-decoration:none;
+
+text-align:center;
+
+border-radius:10px;
+
+font-weight:bold;
+}
+
+/* =========================
+PORTFÓLIO
+========================= */
+
+.portfolio{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
 gap:20px;
 }
 
 .portfolio img{
+
 width:100%;
+
 height:250px;
+
 object-fit:cover;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+border-radius:15px;
+
 transition:.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .portfolio img:hover{
-  transform:scale(1.07);
+
+transform:scale(1.05);
 }
 
-.produto-img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:15px;
+/* =========================
+DIFERENCIAIS
+========================= */
+
+.diferenciais{
+background:#eef5e8;
 }
-    
+
 .cards-diferenciais{
+
 display:grid;
+
 grid-template-columns:repeat(3,1fr);
-gap:20px;
-max-width:1000px;
-margin:auto;
+
+gap:25px;
 }
 
 .diferencial{
+
 background:white;
-padding:25px;
-border-radius:12px;
+
+padding:30px;
+
+border-radius:18px;
+
 text-align:center;
-font-weight:bold;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
 }
 
-/* CONTAINER PRINCIPAL */
-.contato{
-padding:70px 10%;
-text-align:center;
+.diferencial:hover{
+
+transform:translateY(-8px);
 }
 
-/* SUBTÍTULO */
-.contato-sub{
-margin-top:10px;
-margin-bottom:30px;
-color:#666;
+.diferencial i{
+
+font-size:42px;
+
+color:#4F7F2A;
+
+margin-bottom:15px;
 }
 
-/* GRID */
-.contato-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-max-width:900px;
-margin:auto;
-}
+.diferencial h3{
 
-/* CARDS */
-.contato-item{
-background: white;
-padding: 25px;
-border-radius: 15px;
-text-decoration: none;
-color: #333;
-box-shadow: 0 4px 12px rgba(0,0,0,.08);
-transition:all .15s ease;
-display:block;
+color:#4F7F2A;
 
-/* melhora visual */
-border: 1px solid rgba(79,127,42,.15);
-}
-
-.contato-item:active{
-transform: scale(0.97) translateY(2px);
-box-shadow: 0 2px 6px rgba(0,0,0,.15);
-} 
-    
-/* HOVER */
-.contato-item:hover{
-transform: translateY(-6px);
-box-shadow: 0 12px 25px rgba(0,0,0,.15);
-border-color: #4F7F2A;
-}
-
-/* ÍCONES */
-.contato-item i{
-font-size: 34px;
-color: #4F7F2A;
-margin-bottom: 10px;
-}
-
-.contato-item a{
-color: #333;
-text-decoration: none;
-font-weight: 600;
-}
-
-.contato-item a:hover{
-color: #4F7F2A;
-}
-
-footer{
-background:#2f4f1f;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
-}
-
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:60px;
-    height:60px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.25);
-    z-index:999;
-}
-
-.whatsapp img{
-    width:28px;
-    height:28px;
-    display:block;
-}
-
-#servicos,
-#produtos,
-#portfolio,
-#contato{
-    scroll-margin-top: 120px;
-}
-
-.contato-item h3{
 margin-bottom:10px;
 }
 
-.atendimento{
-grid-column:1 / -1;
-justify-self:center;
-max-width:250px;
+/* =========================
+AVALIAÇÕES
+========================= */
+
+.cards-avaliacoes{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
 }
-  
-@media(max-width:768px){
-.hero h1{font-size:42px}
-.logo img{height:80px}
-nav{display:none}
-.cards-diferenciais{grid-template-columns:1fr}
-.cards-atendemos{grid-template-columns:1fr;}
+
+.avaliacao{
+
+background:white;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.avaliacao .estrelas{
+
+font-size:24px;
+
+margin-bottom:15px;
+}
+
+/* =========================
+CONTATO
+========================= */
+
+.contato-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+max-width:1100px;
+
+margin:auto;
+}
+
+.contato-item{
+
+background:white;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+text-decoration:none;
+
+color:#333;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+transition:.3s;
+}
+
+.contato-item:hover{
+
+transform:translateY(-8px);
+}
+
+.contato-item i{
+
+font-size:38px;
+
+color:#4F7F2A;
+
+margin-bottom:15px;
+}
+
+/* =========================
+FORMULÁRIO
+========================= */
+
+.formulario{
+
+max-width:900px;
+
+margin:50px auto 0;
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.formulario h3{
+
+text-align:center;
+
+margin-bottom:25px;
+
+color:#4F7F2A;
+}
+
+.formulario form{
+
+display:grid;
+
+gap:15px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+}
+
+.formulario textarea{
+
+height:120px;
+
+resize:none;
+}
+
+.formulario button{
+
+background:#4F7F2A;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+border-radius:10px;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+background:#2f4f1f;
+
+color:white;
+
+text-align:center;
+
+padding:40px 20px;
+
+margin-top:60px;
+}
+
+footer p{
+
+margin:8px 0;
+}
+
+/* =========================
+WHATSAPP
+========================= */
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+z-index:999;
+}
+
+.whatsapp i{
+
+font-size:34px;
+
+color:white;
+}
+
+/* =========================
+RESPONSIVO
+========================= */
+
+@media(max-width:900px){
+
+.cards-servicos,
+.cards-produtos,
+.cards-diferenciais,
+.cards-avaliacoes,
+.contato-grid{
+
+grid-template-columns:1fr;
+}
+
+.cards-atendemos{
+
+grid-template-columns:1fr;
+}
+
+.portfolio{
+
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+
+font-size:42px;
+}
+
+.hero-sub{
+
+font-size:18px;
+}
+
+nav{
+
+display:none;
+}
+
+.logo img{
+
+height:70px;
+}
 }
 
 </style>
+
 </head>
+
 <body>
 
 <header>
+
 <div class="logo">
 <img src="logo-wanke.jpeg" alt="Wanke Calhas">
 </div>
@@ -360,135 +748,332 @@ nav{display:none}
 <a href="#portfolio">Portfólio</a>
 <a href="#contato">Contato</a>
 </nav>
+
 </header>
 
 <section class="hero">
+
 <h1>WANKE CALHAS</h1>
+
 <div class="logo-bar"></div>
-<p class="marca">Calhas • Rufos • Pingadeiras</p>
-<p>Mais de 20 anos de experiência atendendo residências, empresas,
-condomínios e construtoras em Curitiba e Região Metropolitana.</p>
-<a class="btn" href="https://wa.me/5541984667759" target="_blank">
-Solicitar Orçamento</a>
+
+<div class="hero-sub">
+Calhas • Rufos • Pingadeiras • Funilaria Sob Medida
+</div>
+
+<p>
+Mais de 20 anos oferecendo qualidade, proteção e acabamento profissional em Curitiba e Região Metropolitana.
+</p>
+
+<a class="btn"
+href="https://wa.me/5541984667759"
+target="_blank">
+
+Solicitar Orçamento
+
+</a>
+
 </section>
 
 <section>
+
 <h2>Atendemos</h2>
+
+<p class="section-desc">
+Soluções para obras residenciais, comerciais e industriais.
+</p>
+
 <div class="cards-atendemos">
+
 <div class="card-atendimento">
-    <div class="icone"><i class="fas fa-house"></i></div>
-    <h3>Residências</h3>
+<div class="icone"><i class="fas fa-house"></i></div>
+<h3>Residências</h3>
 </div>
+
 <div class="card-atendimento">
-    <div class="icone"><i class="fas fa-building"></i></div>
-    <h3>Condomínios</h3>
+<div class="icone"><i class="fas fa-building"></i></div>
+<h3>Condomínios</h3>
 </div>
+
 <div class="card-atendimento">
-    <div class="icone"><i class="fas fa-city"></i></div>
-    <h3>Empresas</h3>
+<div class="icone"><i class="fas fa-city"></i></div>
+<h3>Empresas</h3>
 </div>
+
 <div class="card-atendimento">
-    <div class="icone"><i class="fas fa-hard-hat"></i></div>
-    <h3>Construtoras</h3>
+<div class="icone"><i class="fas fa-hard-hat"></i></div>
+<h3>Construtoras</h3>
 </div>
+
 <div class="card-atendimento">
-    <div class="icone"><i class="fas fa-warehouse"></i></div>
-    <h3>Galpões Industriais</h3>
+<div class="icone"><i class="fas fa-warehouse"></i></div>
+<h3>Galpões Industriais</h3>
 </div>
+
 <div class="card-atendimento">
-    <div class="icone"><i class="fas fa-ruler-combined"></i></div>
-    <h3>Engenheiros</h3>
+<div class="icone"><i class="fas fa-ruler-combined"></i></div>
+<h3>Engenheiros</h3>
 </div>
+
 </div>
+
 </section>
 
 <section id="servicos">
+
 <h2>Serviços</h2>
-<div class="cards">
-<div class="card"><h3>Instalação de Calhas</h3><p>Projetos sob medida para cada necessidade.</p></div>
-<div class="card"><h3>Rufos e Pingadeiras</h3><p>Proteção e acabamento profissional.</p></div>
-<div class="card"><h3>Manutenção e Limpeza</h3><p>Serviços preventivos e corretivos.</p></div>
-<div class="card"><h3>Funilaria Sob Medida</h3><p>Peças personalizadas em chapa metálica.</p></div>
+
+<p class="section-desc">
+Instalação, fabricação e manutenção de peças sob medida.
+</p>
+
+<div class="cards-servicos">
+
+<div class="card-servico">
+<i class="fas fa-water"></i>
+<h3>Calhas</h3>
+<p>Instalação profissional para proteção do imóvel.</p>
 </div>
+
+<div class="card-servico">
+<i class="fas fa-ruler-combined"></i>
+<h3>Rufos e Pingadeiras</h3>
+<p>Acabamento e proteção contra infiltrações.</p>
+</div>
+
+<div class="card-servico">
+<i class="fas fa-broom"></i>
+<h3>Limpeza</h3>
+<p>Manutenção preventiva e corretiva.</p>
+</div>
+
+<div class="card-servico">
+<i class="fas fa-hammer"></i>
+<h3>Funilaria Sob Medida</h3>
+<p>Peças fabricadas conforme seu projeto.</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="produtos">
+
 <h2>Produtos</h2>
-<div class="cards">
-<div class="card">
-    <img class="produto-img" src="calha.jpeg" alt="Calhas">
-    <h3>Calhas</h3>
+
+<p class="section-desc">
+Peças fabricadas sob medida para cada necessidade.
+</p>
+
+<div class="cards-produtos">
+
+<div class="produto-card">
+<img src="calha.jpeg">
+<h3>Calhas</h3>
+<p>Modelos residenciais e industriais.</p>
+<a href="https://wa.me/5541984667759">Orçamento</a>
 </div>
-<div class="card">
-    <img class="produto-img" src="rufo.jpeg" alt="Rufos">
-    <h3>Rufos</h3>
+
+<div class="produto-card">
+<img src="rufo.jpeg">
+<h3>Rufos</h3>
+<p>Proteção e acabamento profissional.</p>
+<a href="https://wa.me/5541984667759">Orçamento</a>
 </div>
-<div class="card">
-    <img class="produto-img" src="pingadeira.jpeg" alt="Pingadeiras">
-    <h3>Pingadeiras</h3>
+
+<div class="produto-card">
+<img src="pingadeira.jpeg">
+<h3>Pingadeiras</h3>
+<p>Evita infiltrações e escorrimentos.</p>
+<a href="https://wa.me/5541984667759">Orçamento</a>
 </div>
-<div class="card">
-    <img class="produto-img" src="chapeu-chamine.jpeg" alt="Chapéu para Chaminé">
-    <h3>Chapéu para Chaminé</h3>
+
+<div class="produto-card">
+<img src="chapeu-chamine.jpeg">
+<h3>Chapéu para Chaminé</h3>
+<p>Proteção e ventilação eficiente.</p>
+<a href="https://wa.me/5541984667759">Orçamento</a>
 </div>
+
 </div>
+
 </section>
 
 <section id="portfolio">
+
 <h2>Portfólio</h2>
+
+<p class="section-desc">
+Alguns trabalhos realizados pela Wanke Calhas.
+</p>
+
 <div class="portfolio">
-<img src="obra2.jpg"><img src="obra3.jpg">
-<img src="obra4.jpg"><img src="obra5.jpg"><img src="obra6.jpg">
-<img src="obra7.jpg"><img src="obra8.jpg"><img src="obra9.jpg">
+
+<img src="obra2.jpg">
+<img src="obra3.jpg">
+<img src="obra4.jpg">
+<img src="obra5.jpg">
+<img src="obra6.jpg">
+<img src="obra7.jpg">
+<img src="obra8.jpg">
+<img src="obra9.jpg">
+
 </div>
+
+</section>
+
+<section class="diferenciais">
+
+<h2>Por que escolher a Wanke Calhas?</h2>
+
+<div class="cards-diferenciais">
+
+<div class="diferencial">
+<i class="fas fa-award"></i>
+<h3>Experiência</h3>
+<p>Mais de 20 anos de mercado.</p>
+</div>
+
+<div class="diferencial">
+<i class="fas fa-tools"></i>
+<h3>Fabricação Própria</h3>
+<p>Peças sob medida.</p>
+</div>
+
+<div class="diferencial">
+<i class="fas fa-check-circle"></i>
+<h3>Qualidade</h3>
+<p>Acabamento profissional.</p>
+</div>
+
+<div class="diferencial">
+<i class="fas fa-bolt"></i>
+<h3>Agilidade</h3>
+<p>Atendimento rápido.</p>
+</div>
+
+<div class="diferencial">
+<i class="fas fa-map-marker-alt"></i>
+<h3>Região Metropolitana</h3>
+<p>Atendimento em Curitiba e região.</p>
+</div>
+
+<div class="diferencial">
+<i class="fas fa-handshake"></i>
+<h3>Compromisso</h3>
+<p>Respeito ao cliente e aos prazos.</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>Por que escolher a Wanke Calhas?</h2>
-<div class="cards-diferenciais">
-<div class="diferencial">Mais de 20 anos de experiência</div>
-<div class="diferencial">Fabricação própria sob medida</div>
-<div class="diferencial">Atendimento residencial e empresarial</div>
-<div class="diferencial">Equipe especializada</div>
-<div class="diferencial">Curitiba e Região Metropolitana</div>
-<div class="diferencial">Orçamento sem compromisso</div>
+
+<h2>Avaliações</h2>
+
+<div class="cards-avaliacoes">
+
+<div class="avaliacao">
+<div class="estrelas">⭐⭐⭐⭐⭐</div>
+<p>Excelente atendimento e acabamento impecável.</p>
 </div>
+
+<div class="avaliacao">
+<div class="estrelas">⭐⭐⭐⭐⭐</div>
+<p>Equipe muito profissional e preço justo.</p>
+</div>
+
+<div class="avaliacao">
+<div class="estrelas">⭐⭐⭐⭐⭐</div>
+<p>Serviço rápido e muito bem executado.</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="contato" class="contato">
+<section id="contato">
 
-<h2>Central de Atendimento</h2>
+<h2>Solicite um Orçamento</h2>
 
-<p class="contato-sub">
-Fale com a Wanke Calhas pelo canal que preferir
-</p>
+<div class="formulario">
+
+<h3>Envie sua solicitação</h3>
+
+<form action="mailto:wankecalhas1@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" name="nome" placeholder="Seu nome" required>
+
+<input type="tel" name="telefone" placeholder="Telefone">
+
+<input type="email" name="email" placeholder="E-mail" required>
+
+<select name="servico">
+<option>Calhas</option>
+<option>Rufos</option>
+<option>Pingadeiras</option>
+<option>Funilaria Sob Medida</option>
+<option>Outro</option>
+</select>
+
+<textarea name="mensagem" placeholder="Descreva o serviço desejado"></textarea>
+
+<button type="submit">
+Enviar Solicitação
+</button>
+
+</form>
+
+</div>
+
+<br><br>
 
 <div class="contato-grid">
 
-<a class="contato-item" href="https://wa.me/5541984667759" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
+<a class="contato-item"
+href="https://wa.me/5541984667759"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
 <h3>WhatsApp</h3>
-<p>Orçamento rápido</p>
+
+<p>(41) 98466-7759</p>
+
 </a>
 
 <a class="contato-item"
-href=mailto:wankecalhas1@gmail.com>
-<i class="fa-solid fa-envelope"></i>
+href="mailto:wankecalhas1@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
 <h3>E-mail</h3>
+
 <p>wankecalhas1@gmail.com</p>
+
 </a>
 
 <a class="contato-item"
-href="https://instagram.com/wankecalhas" target="_blank">
-<i class="fa-brands fa-instagram"></i>
+href="https://instagram.com/wankecalhas"
+target="_blank">
+
+<i class="fab fa-instagram"></i>
+
 <h3>Instagram</h3>
+
 <p>@wankecalhas</p>
+
 </a>
 
-<div class="contato-item atendimento">
-<i class="fa-solid fa-location-dot"></i>
+<div class="contato-item">
+
+<i class="fas fa-location-dot"></i>
+
 <h3>Atendimento</h3>
-<p>Curitiba e região</p>
+
+<p>Curitiba e Região Metropolitana</p>
+
 </div>
 
 </div>
@@ -496,16 +1081,24 @@ href="https://instagram.com/wankecalhas" target="_blank">
 </section>
 
 <footer>
-© 2026 Wanke Calhas
 
-Calhas • Rufos • Pingadeiras • Funilaria Sob Medida
+<p><strong>Wanke Calhas</strong></p>
 
-Curitiba e Região Metropolitana
+<p>Calhas • Rufos • Pingadeiras • Funilaria Sob Medida</p>
+
+<p>Curitiba e Região Metropolitana</p>
+
+<p>© 2026 Todos os direitos reservados</p>
+
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5541984667759" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+<a class="whatsapp"
+href="https://wa.me/5541984667759"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
 </a>
-  
+
 </body>
 </html>
