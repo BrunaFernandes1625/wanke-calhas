@@ -11,6 +11,12 @@
 <meta name="description"
 content="Mais de 20 anos de experiência em calhas, rufos, pingadeiras e funilaria sob medida em Curitiba e Região Metropolitana.">
 
+<meta name="keywords"
+content="calhas curitiba, rufos curitiba, pingadeiras curitiba, funilaria curitiba, instalação de calhas">
+
+<meta name="author"
+content="Wanke Calhas">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -154,7 +160,7 @@ font-weight:700;
 color:#d8c27a;
 
 margin-bottom:20px;
-latter-spacing:1px;
+letter-spacing:1px;
 }
 
 .hero p{
@@ -387,7 +393,7 @@ PORTFÓLIO
 
 display:grid;
 
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
 gap:20px;
 }
@@ -664,6 +670,7 @@ z-index:999;
 text-decoration:none;
 outline:none;
 border:none;
+animation:pulse 2s infinite;
 }
 
 .whatsapp:visited{
@@ -682,6 +689,18 @@ color:white;
 .whatsapp:hover{
 transform:scale(1.08);
 transition:.3s;
+}
+
+@keyframes pulse{
+0%{
+box-shadow:0 0 0 0 rgba(37,211,102,.6);
+}
+70%{
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
 }
 
 .lightbox{
@@ -716,6 +735,26 @@ cursor:pointer;
 .portfolio img,
 .produto-card img{
 cursor:pointer;
+}
+
+.hero,
+.card-servico,
+.card-atendimento,
+.produto-card,
+.diferencial,
+.avaliacao{
+animation:fadeUp .7s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
   
 /* =========================
