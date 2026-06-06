@@ -745,7 +745,7 @@ margin-top:8px;
 
 nav a{
 font-size:11px;
-font-weight:600
+font-weight:600;
 padding:8px 4px;
 margin:0;
 text-align:center;
@@ -805,7 +805,7 @@ margin-bottom:25px;
 .cards-avaliacoes,
 .contato-grid,
 .cards-atendemos{
-grid-template-columns:repeat(2,1fr;
+grid-template-columns:repeat(2,1fr);
 gap:10px;
 }
 
@@ -899,36 +899,6 @@ transform:none;
 </style>
 
 </head>
-
-<div id="lightbox" class="lightbox">
-    <span class="fechar">&times;</span>
-    <img id="img-ampliada">
-</div>
-<script>
-
-const imagens = document.querySelectorAll('.portfolio img, .produto-card img');
-
-const lightbox = document.getElementById('lightbox');
-const imgAmpliada = document.getElementById('img-ampliada');
-
-imagens.forEach(img => {
-
-    img.addEventListener('click', () => {
-
-        lightbox.style.display = 'flex';
-        imgAmpliada.src = img.src;
-
-    });
-
-});
-
-lightbox.addEventListener('click', () => {
-
-    lightbox.style.display = 'none';
-
-});
-
-</script>
   
 <body>
 
@@ -1295,6 +1265,42 @@ target="_blank">
 <i class="fab fa-whatsapp"></i>
 
 </a>
+
+<div id="lightbox" class="lightbox">
+    <span class="fechar">&times;</span>
+    <img id="img-ampliada">
+</div>
+
+<script>
+
+const imagens = document.querySelectorAll('.portfolio img, .produto-card img');
+
+const lightbox = document.getElementById('lightbox');
+const imgAmpliada = document.getElementById('img-ampliada');
+const fechar = document.querySelector('.fechar');
+
+imagens.forEach(img => {
+
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        imgAmpliada.src = img.src;
+    });
+
+});
+
+fechar.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+
+    if(e.target === lightbox){
+        lightbox.style.display = 'none';
+    }
+
+});
+
+</script>
 
 </body>
 </html>
