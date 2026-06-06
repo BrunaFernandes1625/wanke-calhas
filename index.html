@@ -338,12 +338,10 @@ transform:translateY(-8px);
 }
 
 .produto-card img{
-
 width:100%;
-
-height:220px;
-
-object-fit:cover;
+height:auto;
+max-height:220px;
+object-fit:contain;
 }
 
 .produto-card h3{
@@ -352,13 +350,14 @@ text-align:center;
 
 color:#4F7F2A;
 
-margin:15px 0;
+margin:8px 0 5px;
+font-size:24px;
 }
 
 .produto-card p{
 
-padding:0 20px;
-
+padding:0 15px;
+margin-bottom:10px;
 text-align:center;
 
 color:#666;
@@ -368,7 +367,7 @@ color:#666;
 
 display:block;
 
-margin:20px;
+margin:12px;
 
 padding:12px;
 
@@ -383,6 +382,33 @@ text-align:center;
 border-radius:10px;
 
 font-weight:bold;
+}
+
+.cores-disponiveis{
+display:flex;
+justify-content:center;
+gap:8px;
+margin:12px 0;
+}
+
+.cor{
+width:18px;
+height:18px;
+border-radius:50%;
+border:1px solid #ccc;
+}
+
+.branco{background:#ffffff;}
+.preto{background:#1f1f1f;}
+.grafite{background:#555555;}
+.marrom{background:#6b4b3e;}
+.vermelho{background:#a32626;}
+
+.legenda-cores{
+text-align:center;
+font-size:12px;
+color:#666;
+margin-bottom:10px;
 }
 
 /* =========================
@@ -1069,6 +1095,29 @@ Instalação, fabricação e manutenção de peças sob medida.
 <p class="section-desc">
 Peças fabricadas sob medida para cada necessidade.
 </p>
+
+<div style="
+text-align:center;
+margin-bottom:20px;
+color:#666;
+font-size:15px;">
+
+⚪Branco ⚫ Preto ⬤ Grafite 🟤 Marrom 🔴 Vermelho Colonial
+e diversas outras cores sob consulta 🎨.
+
+</div>
+
+<div style="
+text-align:center;
+margin-bottom:30px;
+font-weight:600;
+color:#4F7F2A;">
+
+✔️ Fabricação Própria &nbsp;&nbsp;|&nbsp;&nbsp;
+✔️ Sob Medida &nbsp;&nbsp;|&nbsp;&nbsp;
+✔️ Diversas Cores Disponíveis
+
+</div>
 
 <div class="cards-produtos">
 
